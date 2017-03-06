@@ -1,0 +1,17 @@
+* Primo
+
+[[http://knowledge.exlibrisgroup.com/Primo][Primo]] is the search interface that is used by default with the alma interface.
+
+There is a [[https://ucdavis-primosb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=01UCD_V1][UCD Sandbox]] for our primo instance, but this points to the production
+version of the UCD Alma instance.  There is an additional  [[https://ucdavis-primosb.hosted.exlibrisgroup.com:1443/primo_publishing/admin/action/menus.do][Alma Administration Sandbox]]
+
+
+
+* Alma
+
+Alma has a number of [[https://developers.exlibrisgroup.com/alma/apis][APIs]] that can be used in their application.
+
+#+BEGIN_SRC bash
+curl 'https://sandbox01-na.alma.exlibrisgroup.com/view/oai/01UCD_INST/request?verb=ListRecords&set=blacklight&metadataPrefix=marc21' > main.xml
+
+#+END_SRC
