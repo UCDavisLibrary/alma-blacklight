@@ -1,6 +1,9 @@
+
 # Alma Blacklight
 
-A sample application showing a [Blacklight](http://projectblacklight.org) deployment over [Ex Libris Alma](http://www.exlibrisgroup.com/category/AlmaOverview). 
+This project is described, https://developers.exlibrisgroup.com/blog/Integrating-Blacklight-with-Alma
+
+A sample application showing a [Blacklight](http://projectblacklight.org) deployment over [Ex Libris Alma](http://www.exlibrisgroup.com/category/AlmaOverview).
 
 Introduction
 ------------
@@ -24,9 +27,17 @@ This repository is integrated with the Alma Social Authentication feature. Users
 
 1. Clone this repository: `git clone https://github.com/jweisman/alma-blacklight.git`
 2. Install dependencies: `bundle install`
-3. Copy the `application.example.yml` file to `application.yml` and replace the placeholder values.
+3. Copy the `application.example.yml` file to `application.yml` and replace the
+   placeholder values.
+
+   a. Follow the instructions on setting up OAI integration,
+   http://knowledge.exlibrisgroup.com/Alma/Product_Documentation/Alma_Online_Help_(English)/Integrations_with_External_Systems/030Resource_Management/060Setting_Up_OAI_Integration
+
+   b. Create a publishing Profile in Alma
+
+
 4. Run the rake task to populate the index: `rake oai_harvest`
-5. Run the application: `bin\rails server` for WEBrick 
+5. Run the application: `bin\rails server` for WEBrick
 
 License
 -------
